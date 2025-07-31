@@ -6,10 +6,99 @@
     <Name>AlquilerSillasSSAS.database</Name>
     <FullPath>AlquilerSillasSSAS.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>DW Alquiler Sillas.cube</Name>
+      <FullPath>DW Alquiler Sillas.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>DW Alquiler Sillas.partitions</Name>
+          <FullPath>DW Alquiler Sillas.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>DW Fecha.dim</Name>
+      <FullPath>DW Fecha.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Estado Producto.dim</Name>
+      <FullPath>DW Estado Producto.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Roles.dim</Name>
+      <FullPath>DW Roles.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Proveedores.dim</Name>
+      <FullPath>DW Proveedores.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Jornadas.dim</Name>
+      <FullPath>DW Jornadas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Sucursales.dim</Name>
+      <FullPath>DW Sucursales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Productos.dim</Name>
+      <FullPath>DW Productos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Pagos.dim</Name>
+      <FullPath>DW Pagos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Clientes.dim</Name>
+      <FullPath>DW Clientes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Categoria.dim</Name>
+      <FullPath>DW Categoria.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Modulos.dim</Name>
+      <FullPath>DW Modulos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DW Empleados.dim</Name>
+      <FullPath>DW Empleados.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>DW Alquiler Sillas.ds</Name>
+      <FullPath>DW Alquiler Sillas.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>DW Alquiler Sillas.dsv</Name>
+      <FullPath>DW Alquiler Sillas.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>DW Alquiler Sillas</Id>
+            <Name>DW Alquiler Sillas</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=TOMMY-MSI\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=DW_AlquilerSillas</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>DW Alquiler Sillas</Id>
+            <Name>DW Alquiler Sillas</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
